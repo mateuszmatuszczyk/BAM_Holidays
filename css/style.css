@@ -1,0 +1,404 @@
+body{
+	margin: 0;
+	padding: 0;
+	border:none;
+	overflow-x:hidden;
+	overflow-y:show;
+	height: 100%; 
+	
+
+		/*linear background, Top to Bottom */
+	background: linear-gradient(#6699FF, #FFDB4D); /* Standard syntax */
+		/*crosbrowser compability*/
+	background: -webkit-linear-gradient(#6699FF, #FFDB4D); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#6699FF, #FFDB4D); 	/* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#6699FF, #FFDB4D); 	/* For Firefox 3.6 to 15 */
+	background-repeat:no-repeat;
+	background-size:cover;
+	
+	background-attachment: fixed;
+	text-align:center;
+	font: 20px Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+}
+
+#wrapper{
+	border:0 solid;
+	border-radius:1em;
+	height:100%;
+	background-color:#FFFFCC;
+	width:960px;
+	min-width:350px;
+	margin:0 auto;
+	
+	
+}
+#float{
+clear:both;
+}
+header{
+	position:relative;
+	width:100%;
+	height:300px;
+	background-image:url('../images/banner.jpg');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	
+}
+
+nav {text-align:center;
+	vertical-align:middle;
+	text-align:center;
+	width:100%;
+    min-width:30%;
+	height:auto;
+	position:relative;
+	top:65%;	
+    margin:0 auto;
+	
+	}
+
+ul#dropdown_menu{
+	text-align:center;
+	vertical-align:middle;
+	margin:0 auto;
+	width:100%;
+}
+
+ul#dropdown_menu li{
+	text-align:center;
+	vertical-align:middle;
+	display:inline;
+    font-size:1.5em;
+    margin:0.5%;
+	float:left;
+	position:relative;
+    right:2.5%;
+	border-top:none;
+    border-bottom:none;
+}
+
+ul#dropdown_menu li a {
+	text-align:center;
+	width:5em;
+	height:1.7em;
+    padding-top:.4em;
+	padding-bottom:1em;
+	padding-right:.5em;
+	padding-left:.5em;
+    color:white;
+    text-decoration:none;
+	background:#85ADFF;   
+	opacity:0.9;
+    display:inline-block;
+    border-right:none;
+    border-left:none;
+
+}
+
+ul#dropdown_menu li a:hover  {
+	opacity:1;
+    text-decoration:underline;
+    color:#D11111;
+	background:#4D70DB;
+	}
+
+	/* making dropdown submenus appear on hover */
+
+ul#dropdown_menu li:hover ul{
+	visibility:visible;
+    opacity:1;
+	transition: opacity 0s linear;
+}
+
+ul#dropdown_menu ul, ul#dropdown_menu ul li ul {
+    font-size:1em;
+	list-style: none;
+    margin-left:-2%;
+	margin-top:2%;
+	padding:0;
+	width:inherit;
+    background:none;
+	background-size:cover;
+    
+
+	/*This makes the dropdown submenus hidden*/
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+    z-index: 99999;
+	transition: visibility 0.5s, opacity .5s linear;
+	
+}
+
+ul#dropdown_menu ul {
+    position:absolute;
+	left:5%;
+}
+
+ul#dropdown_menu ul li a {
+	font-size:.5em;
+	height:1.5em;
+	margin-top:0.2em;
+    padding:1em 1.6em;
+    color:white;
+    text-decoration:none;
+	background:#85ADFF;   
+    text-decoration:none;
+    display:inline-block;
+    border:none;
+    float:left;
+    clear:both;
+}
+
+.100%{
+	width:100%
+}
+
+#content{
+	margin:0 auto;
+}
+
+#slideshow{
+border-bottom:0.5em solid white;
+border-top:0.5em solid white;
+border-right:0.2em solid white;
+border-left:0.2em solid white;
+border-radius:2%;
+padding-top:1%;
+padding-bottom:2%;
+background-image:url('../images/bg.jpg');
+background-size:100% 100%;
+}
+
+footer{
+	height:10%;
+}
+
+.shadow{
+	box-shadow:0 0 1em 0.2em #888888;
+}
+
+.glow{
+	box-shadow: 0 0 2em yellow;
+}
+
+	/*Form styling*/
+#search{
+	opacity:1;
+	font-size:1em;
+	background-color:#20569C;
+	position:relative;
+	top:10%;
+	left:7%;
+	border:0 solid ;
+	border-radius:2%;
+
+	width:30%;
+	height:590px;
+	text-align:left;
+	
+}
+
+#search h2{
+	width:100%;
+	font-family: Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size:2em;
+	text-align:center;
+	color:#FFFF99;
+	background-color:#FF3300;
+	padding-top:5%;
+	padding-bottom:5%;
+	border-top-left-radius: 2em;
+	border-bottom-right-radius: 2em;
+	margin-bottom:5%;
+	
+}
+
+#search label{
+font-size:1.2em;
+font-weight:bold;
+margin-left:4%;
+display:inline-block;
+width:80%;
+padding-left:5%;
+padding-right:5%;
+color:white;
+background-color:#5F88BC
+}
+
+ select{
+ font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+ color:white;
+ margin-left:5%;
+ font-size:1em;
+ color:black;
+ width:75.2%;
+ }
+
+#search input{
+margin-left:5%;
+font-size:.9em;
+padding-left:2%;
+width:72.2%;
+line-height:1.5em;
+}
+
+/*Three boxes with holiday categories*/
+#3col{
+	display:inline-block;
+	width:100%;
+	margin:5%;
+	padding:5%;
+	}
+.divide a{
+	text-decoration:none;
+	color:#FFFFCC;
+	}
+	
+	
+.divide{
+	background-color:#FFB84D;
+	font-size:1.2em;
+	border-radius:5%;
+	margin-top:1%;
+	margin-bottom:20%;
+	height:300px;
+	width:30%;
+	padding:1%;
+	display:inline-block;
+	margin-bottom:0;
+	padding-bottom:2%;
+	}
+	
+.divide img:hover{
+	border:none;
+	width:100%;
+}
+.divide img{
+	border-radius:1%;
+	display:block;
+	border:0.5em solid white;
+	width:90%;
+}
+.divide a:hover{
+	color:#D11111;
+}
+
+
+/*search button styling*/
+.button {
+	border:none;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#943131));
+	background: -webkit-linear-gradient(top, #ff0000, #943131);
+	background: -moz-linear-gradient(top, #ff0000, #943131);
+	background: -ms-linear-gradient(top, #ff0000, #943131);
+	background: -o-linear-gradient(top, #ff0000, #943131);
+	padding:0.5em;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	color: white;
+	font-size: 1em;
+	font-family: Helvetica, Arial, Sans-Serif;
+	text-decoration: none;
+	vertical-align: middle;
+	text-align:center;
+   }
+.button:hover {
+	border-top-color: #ff6b6b;
+	background: -webkit-gradient(linear, left top, left bottom, from(#943131) , to(#ff0000));
+	background: -webkit-linear-gradient(top, #943131, #ff0000);
+	background: -moz-linear-gradient(top, #943131, #ff0000);
+	background: -ms-linear-gradient(top, #943131, #ff0000);
+	background: -o-linear-gradient(top, #943131, #ff0000);
+	color: #ccc;
+   }
+.button:active {
+   border-top-color: #ba4141;
+   background: #ba4141;
+   }
+   
+/*styling for holiday category page*/
+
+.holidays{
+text-align:justify;
+font-size:1em;
+color:#234E7B;
+border-radius:1%;
+-webkit-border-radius: 1%;
+-moz-border-radius: 1%;
+margin:0 auto;
+padding:1%;
+margin-top:2%;
+width:80%;
+background-color:#FFCC80;
+height:300px;
+}
+
+#pic1{
+padding-right:2%;
+float:left;
+height:100%;
+width:375px;
+}
+#container{
+width:100%;
+}
+
+#contactform{		
+background-color:#E6FF99;
+margin:50px 20px 20px 0px;
+width:35%;
+border: 5px groove;
+border-radius:10px;
+padding:10px;
+float:right;			
+			}
+#googlemap{
+border-radius:10px;
+border:5px groove;
+margin:50px 0px 10px 20px;
+float:left;
+}
+
+p.holInfo {
+color: #33334C;
+text-align: justify;
+padding: 50px 50px 0px 20px;
+width: 35%;
+float: right;
+}
+
+.table{
+text-align:center;
+margin:0 auto;
+padding:100px;
+width:80%;
+color:#801A00;
+border-top:2px solid black;
+border-collapse: collapse;
+}
+
+.table td{
+vertical-align: middle;
+height:50px;
+border:1px solid black;
+padding:15px;
+text-align:center;
+background-color:#FFCC66;
+}
+.table ul{
+text-align:left;
+list-style:square;
+}
+
+.pikachoose{
+margin-top:150px;
+}
+
+
+.social{
+width:75px;
+height:55px;
+padding:0 15px;
+}

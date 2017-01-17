@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+
+        <title>BaM Holidays</title>
+		
+		<script>
+
+		
+	
+	
+		</script>
+		
+    </head>
+
+    <body>
+	    <div id="wrapper" class="glow"><br/>	
+			<header>
+			
+				
+					<nav>	
+							<ul id="dropdown_menu">
+								<li><a href="../index.html">Home</a>
+								</li>
+								<li><a href="pages/page2.html">All Inclusive</a>
+									
+										<ul> 
+											<li> <a href="pages/sub.html"> Bahamas </a></li>
+											<li> <a href="pages/sub1.html"> Maldives </a></li>
+											<li> <a href="pages/sub2.html"> Tenerife </a></li>
+										</ul>
+										
+								</li>
+								<li><a href="pages/page3.html">Sun Holidays</a>
+									<ul> 
+											<li> <a href="pages/sub3.html"> Thailand </a></li>
+											<li> <a href="pages/sub4.html"> Tenerife </a></li>
+											<li> <a href="pages/sub5.html"> Croatia </a></li>
+										</ul>
+								
+								</li>
+								<li><a href="pages/page4.html">Extravagant Holidays</a>
+								
+									<ul> 
+											<li> <a href="pages/sub6.html"> Splash World </a></li>
+											<li> <a href="pages/sub7.html"> Tomorrowland </a></li>
+											<li> <a href="pages/sub8.html"> Luxury Cruise </a></li>
+										</ul>
+								</li>
+								<li><a href="pages/page5.html">Contact us</a>
+								</li>
+							</ul>
+					</nav>
+				
+			</header>
+			
+			<div id="content" class="100%">
+				
+				<div id="slideshow" class="100%">
+							
+					
+			
+				<div id="search" class="shadow">
+				<h2>Holiday Search</h2>
+				
+					<form id="searchForm" name="search" action=''>
+						<label>Holiday Type</label><br/>
+						<select name="holidayType" onChange="updatecities(this.selectedIndex)">
+							<option value="select">------SELECT------</option>
+							<option value="allInc">All Inclusive Holidays</option>
+							<option value="sunny">Sunny Holidays</option>
+							<option value="extra">Extravagant Holidays</option>
+						</select>
+						<br /><br/>
+						<label>Destination City</label><br>
+						<select id="cities" name="cities">
+							<option selected="" value="" selected="selected">------SELECT------</option>
+						</select>
+						<br /><br />
+						<label>Departure date</label><br />
+						<input type="date" id="date" name="date" min ="14-11-2014" max ="01-12-2015" /> 
+						<br /><br />
+						<label>Duration</label><br />
+						<select name="night" class="required">
+							<option selected="" value="" selected="selected">------SELECT------</option>
+							<option value="3">3 Nights</option>
+							<option value="7">7 Nights</option>
+							<option value="14">14 Nights</option>
+							<option value="other">Other</option>
+						</select>
+						
+						<br /><br />
+						<label>Number of rooms</label><br />
+						<select name="rooms" class="required">
+							<option selected="" value="" selected="selected">------SELECT------</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+						</select>
+						<br /><br />
+						<input action="submit" onClick="document.location.href = ('pages/page2.html');" class="button" id="submit" type="submit" value="SEARCH">
+						
+					</form>
+
+<script type="text/javascript">
+
+var countrieslist=document.search.holidayType
+var citieslist=document.search.cities
+
+var cities=new Array()
+cities[0]=""
+cities[1]=["Bahamas|sub", "Maldives|maldives", "Tenerife|tenerife"]
+cities[2]=["Thailand|thailand", "Tenerife|tenerife", "Croatia|croatie"]
+cities[3]=["Splash World|splash", "Tomorrowland|tomorrowland", "Luxury Cruise|cruise"]
+
+function updatecities(selectedcitygroup){
+citieslist.options.length=0
+if (selectedcitygroup>0){
+for (i=0; i<cities[selectedcitygroup].length; i++)
+citieslist.options[citieslist.options.length]=new Option(cities[selectedcitygroup][i].split("|")[0], cities[selectedcitygroup][i].split("|")[1])
+}
+}
+
+</script>
+
+					
+					
+				</div>
+				</div>
+				
+				
+					
+				<div id="3col" class="100%">
+					<div class="divide">
+				
+					<a href="pages/page2.html">
+						<div id="num1">
+							<p>All Inclusive Holidays</p> 
+							<img src="images/all.jpg" />
+						</div>
+					</a>
+					
+				</div>
+				
+				<div class="divide">
+					<a href="pages/page3.html">
+						<div id="num2">
+							<p> Sunny Holidays</p>
+							<img src="images/sun.jpg" />
+						</div>
+					</a>
+				</div>
+				
+				<div class="divide">
+					<a href="pages/page4.html">
+						<div id="num3">
+							<!--https://www.flickr.com/photos/96698561@N05/8894206571/sizes/m/
+							https://www.flickr.com/photos/melu_rogi/4753315312/sizes/l	-->
+							<p>Extravagant holidays</p>
+							<img src="images/ex.jpg" />
+						</div>
+					</a>
+				</div>
+				
+				
+				</div>
+			
+			</div>
+		
+			<hr/>
+			<footer>
+			 
+			<a  href="https://www.facebook.com"><img class="social" src="images/facebook_logo.png"></a>
+			
+			<a href="https://www.twitter.com"><img class="social" src="images/Twitter_logo.png"></a>
+			
+			<a href="http://www.e-zeeinternet.com/" target="_blank"><img src="http://www.e-zeeinternet.com/count.php?page=1088466&style=odometer&nbdigits=5&reloads=1"  border="0" ></a><br><a href="http://www.e-zeeinternet.com/"  target="_blank" style="font-family: Geneva, Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; text-decoration: none;"></a>
+		
+			</footer>
+			
+			
+			
+		</div>
+			
+			
+			
+		
+	
+	</body>
+
+</html>

@@ -1,0 +1,128 @@
+	<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+        <title>BaM Holidays</title>
+		<script src="../javascript/formValidation.js"></script>
+    </head>
+
+    <body>
+	    <div id="wrapper" class="glow"><br/>	
+			<header>
+			
+				
+					<nav>	
+							<ul id="dropdown_menu">
+								<li><a href="../index.html">Home</a>
+								</li>
+								<li><a href="page2.html">All Inclusive</a>
+									
+										<ul> 
+											<li> <a href="sub.html"> Bahamas </a></li>
+											<li> <a href="sub1.html"> Maldives </a></li>
+											<li> <a href="sub2.html"> Tenerife </a></li>
+										</ul>
+										
+								</li>
+								<li><a href="page3.html">Sun Holidays</a>
+									<ul> 
+											<li> <a href="sub3.html"> Thailand </a></li>
+											<li> <a href="sub4.html"> Tenerife </a></li>
+											<li> <a href="sub5.html"> Croatia </a></li>
+										</ul>
+								
+								</li>
+								<li><a href="page4.html">Extravagant Holidays</a>
+								
+									<ul> 
+											<li> <a href="sub6.html"> Splash World </a></li>
+											<li> <a href="sub7.html"> Tomorrowland </a></li>
+											<li> <a href="sub8.html"> Luxury Cruise </a></li>
+										</ul>
+								</li>
+								<li><a href="page5.html">Contact us</a>
+								</li>
+							</ul>
+					</nav>
+				
+			</header>
+			
+	<div id="content" class="100%">
+		<div id="container">
+										
+			<div id="googlemap">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.694259540252!2d-6.243567999999979!3d53.348729000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e8cd86e97e7%3A0x6d51b774ee7fa935!2sNational+College+of+Ireland!5e0!3m2!1sen!2sie!4v1417011749972" width="500" height="350" frameborder="0" style="border:0"></iframe>	
+			</div>
+						
+			<div id="contactform">
+				<form>
+
+			  <div class="form-group">
+				<label for="name">Name</label>
+				<input type="text" class="form-control" id="name" name="name"       placeholder="Enter your name.." onkeyup='validateName()'>
+				<span class='error-message' id='name-error'></span>
+			  </div>
+
+			  <div class="form-group">
+				<label for="surname">Surname</label>
+				<input type="text" class="form-control" id="surname" name="name"       placeholder="Enter your name.." onkeyup='validateName()'>
+				<span class='error-message' id='name-error'></span>
+			  </div>
+			  
+			  <div class="form-group">
+				<label for="contact-phone">Phone Number</label>
+				<input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="Ex: 1231231234" onkeyup='validatePhone()'>
+				<span class='error-message' id='phone-error'></span>
+			  </div>
+
+			  <div class="form-group">
+				<label for="contact-email">Email address</label>
+				<input type="email" class="form-control" id="contact-email" name="email" placeholder="Enter Email" onkeyup='validateEmail()'>
+				<span class='error-message' id='email-error'></span>
+			  </div>   
+
+				<div class="form-group">
+				<label for="contact-message">Message</labe>
+				<textarea class="form-control" rows="5" id="contact-message" name="message"
+				placeholder="Please enter your message here..." onkeyup="validateMessage()"> </textarea>
+			  
+			  <span class='error-message' id='message-error'></span>
+				</div>
+				
+				<button class="button" onclick='return validateForm()'>Submit</button>
+			<span class='error-message' id='submit-error'></span>
+				
+				
+		
+						</div>
+					</div>
+					
+				</div>
+				<div id="float">
+				</div>
+			
+			<hr/>
+			
+				<footer>
+			 
+			<a  href="https://www.facebook.com"><img class="social" src="../images/facebook_logo.png"></a>
+			
+			<a href="https://www.twitter.com"><img class="social" src="../images/Twitter_logo.png"></a>
+			
+			<a href="http://www.e-zeeinternet.com/" target="_blank"><img src="http://www.e-zeeinternet.com/count.php?page=1088466&style=odometer&nbdigits=5&reloads=1"  border="0" ></a><br><a href="http://www.e-zeeinternet.com/"  target="_blank" style="font-family: Geneva, Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; text-decoration: none;"></a>
+		
+			</footer>
+			
+			
+		</div>
+			
+			
+			
+		
+	
+	</body>
+
+</html>
